@@ -39,6 +39,11 @@
       "name": "Lost Picasso Painting",
       "categoryId": "2",
       "id": 8
+    },
+    {
+      "name": "a hunk of goldenrod",
+      "categoryId": "5",
+      "id": 9
     }
   ],
   "category": [
