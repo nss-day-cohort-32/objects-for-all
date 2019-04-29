@@ -4,24 +4,23 @@ const categoryDom = (obj) => {
                 ${obj.id}
             </div>`;
 };
-
 const categoryDetailDom = (obj) => {
     return `<div>
                 ${obj.name}
                 ${obj.junk}
             </div>`;
 };
-
 const categoryOptionMenuDom = (obj) => {
     return `<option value="${obj.id}">${obj.name}</option>`
 };
-
 const buildOptionMenu = (data) => {
     data.forEach(element => {
         optionContainer.innerHTML += categoryOptionMenuDom(element)
     })
 };
-
+const categoryScrollDom = (obj) => {
+    return `<option>${obj}</option>`;
+}
 const buildCategoryDom = (data) => {
     mainContainer.innerHTML = "";
     data.forEach(element => {
@@ -36,4 +35,8 @@ const buildCategoryDetailDom = (data) => {
     data.junk.forEach(element => {
         mainContainer.innerHTML += categoryDetailDom(element);
     });
+};
+
+const fillScrollBar = (data) => {
+    categoryScrollBar.innerHTML += categoryScrollDom(data);
 };
