@@ -19,11 +19,22 @@
     <h2>More Junk Categories</h2>
     <fieldset>
         <label for="junk__category">Name:</label>
-        <input id="junk__category" class="junk__category" type="text" autofocus />
+        <input id="junk__category" class="junk__category" type="text" autofocus/>
     </fieldset>
 
-    <button class="btn category__save" id="btn-saveCategory">Save Junk Category</button>
+    <input type="submit" class="btn category__save" id="btn-saveCategory">Save Junk Category</input>
 
+    <h2>More Junk Items</h2>
+    <fieldset>
+        <label for="junk__item">Name:</label>
+        <input id="junk__item" class="junk__item" type="text" autofocus/>
+        <label for="junk__item__category">Category</label>
+        <select id="junk__item__category" class="junk__item__category">
+
+        </select>
+    </fieldset>
+<div id="help"></div>
+    <input type="submit" class="btn item__save" id="btn-saveitem">Save Junk Item</input>
     <br>
     <br>
     <br>
@@ -47,6 +58,7 @@
     <script src="scripts/dom-category.js"></script>
     <script src="scripts/dom-junk.js"></script>
     <script src="scripts/dbcalls.js"></script>
+    <script src="scripts/junk-items.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 
