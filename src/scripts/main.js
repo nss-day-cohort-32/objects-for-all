@@ -23,20 +23,32 @@ handleGetCategoryDetailClick = () => {
         });
 };
 
-document.querySelector("#btn-saveCategory").addEventListener("click", event => {
-    const category = document.querySelector(".junk__category").value;
-
-        // Once you have collected all the values, build your data structure
-        const categoryObj = {
-            name: category
-        };
-
-    API.saveCategory(categoryObj)
+document.querySelector("#btn-saveCategory").addEventListener("click", () => {
+    let categoryObj = addJunktoDB()
+    API.saveNewJunk(categoryObj)
     .then(parsedResult => {
         console.log("what is the result", parsedResult);
     });
 
 });
+
+document.querySelector("#btn-saveNewCategory").addEventListener("click", () => {
+    let newCategory = addNewCategory()
+    API.saveCategory(newCategory)
+    .then(parsedResults => {
+        document.querySelector("#categories").innerHTML = ""
+        loadOptions()
+    })
+})
+
+function loadOptions() {
+    API.getCategories()
+    .then(parsedResult => {
+        buildOptionMenu(parsedResult)
+    })
+}
+
+loadOptions();
 
 
 document.querySelector("#btn-getJunk").addEventListener("click", handleGetJunkClick);
@@ -44,6 +56,7 @@ document.querySelector("#btn-getCategories").addEventListener("click", handleGet
 document.querySelector("#btn-getCategoryDetails").addEventListener("click", handleGetCategoryDetailClick);
 
 const mainContainer = document.querySelector("#container");
+const optionContainer = document.querySelector("#categories");
 
 
 

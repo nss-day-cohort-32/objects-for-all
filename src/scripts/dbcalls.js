@@ -17,6 +17,16 @@ const API = {
         return fetch("http://localhost:8088/category/1?_embed=junk")
         .then(response => response.json());
     },
+    saveNewJunk: function (obj) {
+        return fetch("http://localhost:8088/junk",{
+            method: "POST",
+            headers: {
+            "Content-Type": "application/json"
+            },
+            body: JSON.stringify(obj)
+        })
+        .then(response => response.json());
+    },
     saveCategory: function (obj) {
         return fetch("http://localhost:8088/category",{
             method: "POST",
@@ -25,7 +35,7 @@ const API = {
             },
             body: JSON.stringify(obj)
         })
-        .then(response => response.json())
+        .then(response => response.json());
     }
 };
 

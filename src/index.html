@@ -14,17 +14,28 @@
     <button id="btn-getCategoryDetails">Get Category Details</button>
     <div id="container"></div>
 
-    <h2>More Junk Categories</h2>
+    <h2>Add Junk to Drawer</h2>
     <fieldset>
+        <label for="categories">Category:</label>
+        <select name="categories" id="categories">
+        </select>
         <label for="junk__category">Name:</label>
         <input id="junk__category" class="junk__category" type="text" autofocus />
+        <button class="btn category__save" id="btn-saveCategory">SAVE JUNK</button>
     </fieldset>
 
-    <button class="btn category__save" id="btn-saveCategory">Save Junk Category</button>
+    <h2>Add a catergory</h2>
+    <fieldset>
+        <label for="addCategory">Name</label>
+        <input id="addCategory" type="text">
+        <button class="btn category__save" id="btn-saveNewCategory">SAVE</button>
+    </fieldset>
+
 
     <script src="scripts/dom-category.js"></script>
     <script src="scripts/dom-junk.js"></script>
-    <script src="scripts/main.js"></script>
     <script src="scripts/dbcalls.js"></script>
+    <script src="scripts/dbPost.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

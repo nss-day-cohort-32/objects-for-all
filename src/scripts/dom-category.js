@@ -12,6 +12,16 @@ const categoryDetailDom = (obj) => {
             </div>`;
 };
 
+const categoryOptionMenuDom = (obj) => {
+    return `<option value="${obj.id}">${obj.name}</option>`
+};
+
+const buildOptionMenu = (data) => {
+    data.forEach(element => {
+        optionContainer.innerHTML += categoryOptionMenuDom(element)
+    })
+};
+
 const buildCategoryDom = (data) => {
     mainContainer.innerHTML = "";
     data.forEach(element => {
