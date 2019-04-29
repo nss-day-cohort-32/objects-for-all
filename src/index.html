@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>One Object For All and All For One</title>
-</head>
-<body>
-
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <h1>What I found in the Junk Drawer</h1>
     <button id="btn-getJunk">Get Junk</button>
     <button id="btn-getCategories">Get Categories</button>
@@ -16,15 +16,34 @@
 
     <h2>More Junk Categories</h2>
     <fieldset>
-        <label for="junk__category">Name:</label>
-        <input id="junk__category" class="junk__category" type="text" autofocus />
+      <label for="junk__category">Name:</label>
+      <input id="junk__category" class="junk__category" type="text" autofocus />
     </fieldset>
 
-    <button class="btn category__save" id="btn-saveCategory">Save Junk Category</button>
+    <button class="btn category__save" id="btn-saveCategory">
+      Save Junk Category
+    </button>
+
+    <div id="addJunk">
+      <h3>Add Junk By Categories</h3>
+      <form>
+        <select id="junkCategory">
+          <option value="1">Office</option>
+          <option value="2">Art</option>
+          <option value="3">Bell</option>
+          <option value="4">C32 Notes</option>
+          <option value="5">Crayon Bits</option>
+          <option value="6">Colored Pencils</option>
+        </select>
+        <input id="junkInput" type="text"/>
+      </form>
+      <button id="submitButton">Submit</button>
+    </div>
 
     <script src="scripts/dom-category.js"></script>
     <script src="scripts/dom-junk.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/dbcalls.js"></script>
-</body>
+    <script src="scripts/add-junk.js"></script>
+  </body>
 </html>

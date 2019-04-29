@@ -25,7 +25,7 @@ const API = {
             },
             body: JSON.stringify(obj)
         })
-        .then(response => response.json())
+        .then(response => response.json());
     }
 };
 
