@@ -25,16 +25,16 @@ const API = {
             },
             body: JSON.stringify(obj)
         })
-            .then(response => response.json());
+        .then(response => response.json());
     },
-    saveJunk: function (obj) {
+    saveJunk: function (x) {
         return fetch("http://localhost:8088/junk", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json"
+            "Content-Type": "application/json"
             },
-            body: JSON.stringify(obj)
+            body: JSON.stringify(x)
         })
-            .then(response => response.json());
+        .then(answer => answer.json());
     }
 };
