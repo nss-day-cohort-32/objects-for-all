@@ -29,6 +29,16 @@
       "id": 6,
       "name": "Ribbon",
       "categoryId": 3
+    },
+    {
+      "name": "Candy Corn",
+      "categoryId": "7",
+      "id": 7
+    },
+    {
+      "name": "Lost Picasso Painting",
+      "categoryId": "2",
+      "id": 8
     }
   ],
   "category": [
@@ -55,6 +65,10 @@
     {
       "name": "Colored Pencils",
       "id": 6
+    },
+    {
+      "name": "Old Candy",
+      "id": 7
     }
   ],
   "order": [

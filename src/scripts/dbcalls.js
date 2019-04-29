@@ -26,6 +26,16 @@ const API = {
             body: JSON.stringify(obj)
         })
             .then(response => response.json());
+    },
+    saveJunk: function (obj) {
+        return fetch("http://localhost:8088/junk", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(obj)
+        })
+            .then(response => response.json());
     }
 };
 
