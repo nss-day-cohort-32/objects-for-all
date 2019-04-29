@@ -29,6 +29,41 @@
       "id": 6,
       "name": "Ribbon",
       "categoryId": 3
+    },
+    {
+      "name": "addams junk",
+      "categoryId": "Junk",
+      "id": 7
+    },
+    {
+      "name": "shelly's stuff",
+      "categoryId": "Junk",
+      "id": 8
+    },
+    {
+      "name": "emily's stuff",
+      "categoryId": "Junk",
+      "id": 9
+    },
+    {
+      "name": "Hughes' stuff",
+      "categoryId": "Junk",
+      "id": 10
+    },
+    {
+      "name": "Hughes' stuff",
+      "categoryId": "Junk",
+      "id": 11
+    },
+    {
+      "name": "even more of Addam's stuff",
+      "categoryId": "Junk",
+      "id": 12
+    },
+    {
+      "name": "Addam's Office Stuff",
+      "categoryId": "Office",
+      "id": 13
     }
   ],
   "category": [
@@ -55,6 +90,34 @@
     {
       "name": "Colored Pencils",
       "id": 6
+    },
+    {
+      "name": "Addam's random stuff",
+      "id": 7
+    },
+    {
+      "name": "NSS Practice Items",
+      "id": 8
+    },
+    {
+      "name": "new item",
+      "id": 9
+    },
+    {
+      "name": "even newer item",
+      "id": 10
+    },
+    {
+      "name": "newer newere item",
+      "id": 11
+    },
+    {
+      "name": "newest item",
+      "id": 12
+    },
+    {
+      "name": "emily's stuff",
+      "id": 13
     }
   ],
   "order": [

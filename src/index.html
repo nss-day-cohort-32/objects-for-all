@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>One Object For All and All For One</title>
 </head>
+
 <body>
 
     <h1>What I found in the Junk Drawer</h1>
@@ -22,9 +24,30 @@
 
     <button class="btn category__save" id="btn-saveCategory">Save Junk Category</button>
 
+    <br>
+    <br>
+    <br>
+
+    <h2>Add More Junk</h2>
+    <article>
+        <fieldset id="selectCategoryCont">
+            <h2>Select Category</h2>
+            <select name="CategoryId" id="categoryId">
+                <!-- <option value="Junk">Junk</option>
+                <option value="Category">Category</option>
+                <option value="Order">Order</option> -->
+            </select>
+        </fieldset>
+        <fieldset>
+            <input type="search" name="searchbar" id="addJunkBar">
+            <button id="addJunkButton">Submit</button>
+        </fieldset>
+    </article>
+
     <script src="scripts/dom-category.js"></script>
     <script src="scripts/dom-junk.js"></script>
-    <script src="scripts/main.js"></script>
     <script src="scripts/dbcalls.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
+
 </html>

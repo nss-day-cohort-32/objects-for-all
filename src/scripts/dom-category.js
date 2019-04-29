@@ -12,6 +12,10 @@ const categoryDetailDom = (obj) => {
             </div>`;
 };
 
+const categoryScrollDom = (obj) => {
+    return `<option>${obj}</option>`;
+}
+
 const buildCategoryDom = (data) => {
     mainContainer.innerHTML = "";
     data.forEach(element => {
@@ -26,4 +30,8 @@ const buildCategoryDetailDom = (data) => {
     data.junk.forEach(element => {
         mainContainer.innerHTML += categoryDetailDom(element);
     });
+};
+
+const fillScrollBar = (data) => {
+    categoryScrollBar.innerHTML += categoryScrollDom(data);
 };
