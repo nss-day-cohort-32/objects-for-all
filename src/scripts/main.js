@@ -59,9 +59,3 @@ document.querySelector("#btn-getCategories").addEventListener("click", handleGet
 document.querySelector("#btn-getCategoryDetails").addEventListener("click", handleGetCategoryDetailClick);
 
 const mainContainer = document.querySelector("#container");
-
-
-
-
-
-
