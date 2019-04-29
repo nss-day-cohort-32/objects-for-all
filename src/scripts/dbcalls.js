@@ -15,17 +15,27 @@ const API = {
     },
     getCategoryWithJunk: function () {
         return fetch("http://localhost:8088/category/1?_embed=junk")
-        .then(response => response.json());
+            .then(response => response.json());
     },
     saveCategory: function (obj) {
-        return fetch("http://localhost:8088/category",{
+        return fetch("http://localhost:8088/category", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(obj)
+        })
+        .then(response => response.json());
+    },
+    saveJunk: function (x) {
+        return fetch("http://localhost:8088/junk", {
             method: "POST",
             headers: {
             "Content-Type": "application/json"
             },
-            body: JSON.stringify(obj)
+            body: JSON.stringify(x)
         })
-        .then(response => response.json())
+        .then(answer => answer.json());
     }
 }
 
@@ -82,3 +92,4 @@ const API = {
 
 
 
+};
