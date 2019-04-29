@@ -56,12 +56,5 @@
       "name": "Colored Pencils",
       "id": 6
     }
-  ],
-  "order": [
-    {
-      "id": 1,
-      "foodId": 2,
-      "drinkId": 1
-    }
   ]
 }

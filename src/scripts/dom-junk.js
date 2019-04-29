@@ -5,7 +5,6 @@ const junkDom = (obj) => {
             </div>`;
 };
 
-
 function buildJunkDom(dataArray) {
     mainContainer.innerHTML = "";
     dataArray.forEach((obj) => {

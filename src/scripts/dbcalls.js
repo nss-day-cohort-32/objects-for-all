@@ -27,7 +27,7 @@ const API = {
         })
         .then(response => response.json())
     }
-};
+}
 
 // foodFactory = (foodItem) => {
 //     return `<h2>${foodItem.name}</h2>`;
