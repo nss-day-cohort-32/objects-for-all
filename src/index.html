@@ -24,11 +24,16 @@
     </button>
 
     <h2>More Junk</h2>
-    <select id="selectMenu"> </select>
-
+    <fieldset>
+      <select id="selectMenu"></select>
+      <input type="text" id="junk__add" />
+      <button class="btn category__save" id="btn-saveJunk">
+        Save Junk
+      </button>
+    </fieldset>
+    <script src="scripts/dbcalls.js"></script>
     <script src="scripts/dom-category.js"></script>
     <script src="scripts/dom-junk.js"></script>
     <script src="scripts/main.js"></script>
-    <script src="scripts/dbcalls.js"></script>
   </body>
 </html>

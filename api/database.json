@@ -29,6 +29,11 @@
       "id": 6,
       "name": "Ribbon",
       "categoryId": 3
+    },
+    {
+      "name": "whistle",
+      "categoryId": 3,
+      "id": 7
     }
   ],
   "category": [
@@ -55,6 +60,14 @@
     {
       "name": "Colored Pencils",
       "id": 6
+    },
+    {
+      "name": "NASCAR items",
+      "id": 7
+    },
+    {
+      "name": "Franks stuff",
+      "id": 8
     }
   ],
   "order": [
